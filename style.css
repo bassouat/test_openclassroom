@@ -1,0 +1,777 @@
+#page{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*fonts*/
+
+@font-face {
+	font-family: "roboto";
+	src:url("fonts/roboto-Regular.ttf"); 
+}
+
+@font-face {
+	font-family: "roboto-bold";
+	src:url("fonts/roboto-bold.ttf");
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: roboto-bold;
+}
+
+h3{
+	font-family: roboto-bold;
+}
+
+.center{
+	text-align: center;
+}
+/*header*/
+
+#header{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*navigation*/
+
+nav{
+	margin: 0;
+	padding: 0;
+}
+
+nav ul{
+	margin: 0px;
+	padding:0px;
+	display: flex;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav a{
+	display: inline-block;
+	padding: 20px 30px;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-family: roboto;
+	font-size: 14px;
+	color: black;
+}
+
+.menu:hover{
+	border-top: 2px solid #27abb8;
+}
+
+/*slider*/
+.slide{
+	position: relative;
+}
+.slide img{
+	width: 100%;
+}
+.textslider{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+    color: white;
+}
+
+.textslider p{
+	font-family: roboto;
+}
+
+h1 span{
+	color:#27abb8;
+}
+
+/*chevron*/
+.angle1{
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	color: white;
+	background-color: black;
+	opacity: 0.35;
+	padding: 10px 10px 10px 10px;
+	border-radius: 0px 50px 50px 0px;
+}
+
+.angle2{
+	position: absolute;
+	top: 50%;
+	right:0%;
+	color: white;
+	background-color: black;
+	opacity: 0.35;
+	padding: 10px 10px 10px 10px;
+	border-radius: 50px 0px 0px 50px;
+}
+
+/*button*/
+button{
+	background-color:#27abb8;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 15px;
+	width: 120px;
+	font-size: 16px;
+	color: white;
+}
+
+
+/*separation*/
+.hr{
+	margin-left: 18%;
+	width: 60%;
+}
+
+/*section services*/
+
+.services1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.services2{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+.separator{
+	position: relative;
+	width: 80px;
+}
+
+ .fa-circle{
+	color:#27abb8; 
+}
+
+ .circle1{
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 40%;
+ 	border: 2px solid white;
+	border-radius: 10px;
+ }
+
+.options{
+	width:100%;
+	height: 500px;
+	padding-top: 5%;
+}
+ 
+ /*bloc of ux design, ui design, seo*/
+.bloc{
+	display: flex;
+	flex-direction: row;
+}
+
+/*icons font awesome*/
+
+.icon{
+  padding-top:5%;
+}
+
+.circle{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left: 70px;
+  border: 1px solid gray;
+  border-radius: 200px;
+}
+
+.icon1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#27abb8;
+}
+
+.icon2{
+	position: absolute;
+	top: 50%;
+	left: 100%;
+    transform: translate(-50%, -50%);
+    color:#27abb8;
+}
+
+/*text inside bloc's class*/
+.text{
+	margin-left: 5%;
+}
+
+
+/*section portfolio*/
+.projets{
+	background-color: lightgray;
+}
+.port1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.circle2{
+	color:#27abb8;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+/*section portfolio :menu2*/
+
+.nav{
+	background-color: rgba(180, 180, 180, 0.7);
+	}
+.menu1{
+	position: relative;
+}
+
+.menu1 i{
+ 	display: none;
+ 	color: #1E90FF;
+ }
+
+.menu1:hover i{
+	display: inline-block;
+	position: absolute;
+	top: 89%;
+	left: 52.5px;
+}
+
+.menu1:hover a{
+    background-color:#27abb8;
+    border-bottom: 5px solid #1E90FF;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+}
+
+
+/*portfolio*/
+
+.portfolio figure {
+    position: relative;
+}
+
+
+.portfolio{
+	display: flex;
+    justify-content: space-around;
+}
+
+.portfolio  img{
+	width: 100%;
+}
+
+.portfolio figcaption{
+	display: none;
+}
+
+figure:hover figcaption{
+	display: block;
+	position: absolute;
+	top: 65%;
+	left: 0;
+	height: 33%;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+}
+
+figcaption p{
+	font-family: roboto-bold;
+}
+.portfolio p{
+	color: white;
+	font-family: roboto;
+	padding-left: 5px;
+	font-size: 12px;
+}
+
+figure:hover div{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 52%;
+	left: 80%;
+	border: 3px solid white;
+	border-radius: 200px;
+	background-color: #27abb8; 
+}
+
+.far .fa-eye{
+	width: 10%;
+}
+.portfolio i{
+	display: none;
+}
+
+figure:hover i{
+	display: inline-block;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	color: white;
+}
+
+/*contact*/
+#maps{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#contact{
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  background-color: white;
+  width: 30%;
+  height: 80%;
+  padding: 7px; 
+  font-family: roboto;
+}
+
+ iframe{
+   width: 100%;
+   height: 700px;
+   color: skyblue;
+}
+
+#maps form input{
+	width: 100%;
+}
+
+#maps form textarea{
+	width: 100%;
+}
+
+ .button {
+	background-color:#27abb8;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	width: 40%;
+	font-size: 12px;
+    margin-left: 3%;
+}
+
+.button a{
+	text-decoration: none;
+	display:block;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px){
+
+
+/*for mobile phone*/
+	#header{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+
+ nav ul{
+	margin: 0px;
+	padding:0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+
+ .textslider{
+	position: absolute;
+	top: 6%;
+	left: 8%;
+    color: white;
+    font-size: 8px;
+ }
+
+ /*button*/
+button{
+	background-color:#27abb8;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	padding: 7px 8px;
+	width: 30%;
+	font-size: 8px;
+	color: white;
+ }
+
+ /*services*/
+ 
+ .ser{
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+ .services2{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+ }
+
+ .services2 figure{
+ 	margin-left: 20%;
+ 	width: 60%;
+ }
+
+ .services2 img{
+ 	width: 100%;
+ }
+ 
+ .options{
+ 	width: 100%;
+ 	padding-top: 0;
+ 	height: 600px;
+ 	text-align: center;
+ }
+
+  /*bloc of ux design, ui design, seo*/
+.bloc{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+
+ .icon{
+  padding-top:0;
+  margin-right: 17%;
+ }
+
+ /*text inside bloc's class*/
+.text{
+	margin-left: 0;
+}
+
+/*projet*/
+
+/*portfolio*/
+
+.portfolio figure {
+    position: relative;
+}
+
+
+.portfolio{
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio  img{
+	width: 100%;
+ }
+
+
+ .button {
+	background-color:#27abb8;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	width: 100%;
+	font-size: 12px; 
+    margin-left: 3%;
+ }
+
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 767px){
+ /*tablets*/
+
+ #header{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+
+ nav ul{
+	margin: 0px;
+	padding:0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+
+ .textslider{
+	position: absolute;
+	top: 12%;
+	left: 8%;
+    color: white;
+    font-size: 10px;
+ }
+
+ /*button*/
+button{
+	background-color:#27abb8;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	padding: 7px 8px;
+	width: 30%;
+	font-size: 12px;
+	color: white;
+ }
+
+/*services*/
+ 
+ .ser{
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+ .services2{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+ }
+
+ .services2 figure{
+ 	margin-left: 7%;
+ 	width: 90%;
+ }
+
+ .services2 img{
+ 	width: 100%;
+ }
+ 
+ .options{
+ 	width: 100%;
+ 	padding-top: 0;
+ 	height: 500px;
+ }
+
+  /*bloc of ux design, ui design, seo*/
+.bloc{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+
+ .icon{
+  padding-top:0;
+  margin-right: 10%;
+ }
+
+ /*text inside bloc's class*/
+.text{
+	margin-left: 0;
+	text-align: center;
+}
+
+/*projet*/
+
+/*portfolio*/
+
+.portfolio figure {
+    position: relative;
+}
+
+
+.portfolio{
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio  img{
+	width: 100%;
+ }
+
+ figure:hover figcaption{
+	display: block;
+	position: absolute;
+	top: 66%;
+	left: 0;
+	height: 33%;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+ }
+
+.portfolio p{
+	color: white;
+	font-family: roboto;
+	padding-left: 5px;
+	font-size: 15px;
+}
+
+figure:hover div{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	top: 58%;
+	left: 85%;
+	border: 3px solid white;
+	border-radius: 200px;
+	background-color: #27abb8; 
+}
+
+.far .fa-eye{
+	width: 10%;
+}
+.portfolio i{
+	display: none;
+}
+
+figure:hover i{
+	display: inline-block;
+	position: absolute;
+	top: 38%;
+	left: 33%;
+	color: white;
+ }
+
+ .button {
+	background-color:#27abb8;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	width: 70%;
+	font-size: 12px; 
+    margin-left: 3%;
+ }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 958px){
+
+ /*services*/
+ 
+
+ .services2{
+	display: flex;
+
+ }
+
+ .services2 figure{
+ 	width: 100%;
+ }
+
+ .services2 img{
+ 	width: 100%;
+ }
+
+.options{
+	width:100%;
+	height: 450px;
+	padding-top: 0;
+ }
+ 
+ /*bloc of ux design, ui design, seo*/
+.bloc{
+	display: flex;
+	flex-direction: row;
+ }
+
+/*icons font awesome*/
+
+.icon{
+  padding-top:5%;
+ }
+
+#circle{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left: 70px;
+  border: 1px solid gray;
+  border-radius: 200px;
+ }
+
+#icon1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#27abb8;
+ }
+
+#icon2{
+	position: absolute;
+	top: 50%;
+	left: 100%;
+    transform: translate(-50%, -50%);
+    color:#27abb8;
+ }
+
+/*text inside bloc's class*/
+.text{
+	margin-left: 5%;
+ }
+
+/*projet*/
+
+/*portfolio*/
+
+.portfolio figure {
+    position: relative;
+}
+
+
+.portfolio{
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio  img{
+	width: 100%;
+ }
+
+ figure:hover figcaption{
+	display: block;
+	position: absolute;
+	top: 66%;
+	left: 0;
+	height: 33%;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+ }
+
+.portfolio p{
+	color: white;
+	font-family: roboto;
+	padding-left: 5px;
+	font-size: 15px;
+}
+
+figure:hover div{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	top: 60%;
+	left: 85%;
+	border: 3px solid white;
+	border-radius: 200px;
+	background-color: #27abb8; 
+}
+
+.far .fa-eye{
+	width: 10%;
+}
+.portfolio i{
+	display: none;
+}
+
+figure:hover i{
+	display: inline-block;
+	position: absolute;
+	top: 33%;
+	left: 33%;
+	color: white;
+ }
+
+}
+
+
